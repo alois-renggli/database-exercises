@@ -21,7 +21,7 @@ CREATE TABLE albums(
 -- name — string for storing a record name
   name VARCHAR(50) NOT NULL,
 -- release_date — integer representing year record was released
-  release_date DATE NOT NULL,
+  release_date YEAR NOT NULL,
 -- sales — floating point value for number of records sold (in millions)
   sales FLOAT NOT NULL,
 -- genre — string for storing the record's genre(s)
