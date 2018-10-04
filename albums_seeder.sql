@@ -1,5 +1,5 @@
 USE codeup_test_db;
-
+TRUNCATE albums;
 
 -- Create a new file named albums_seeder.sql.
 --
@@ -126,3 +126,7 @@ VALUES ('Guns N'' Roses',	'Appetite for Destruction',	1987,	'Hard rock', 21.6);
 -- Again, this should not generate any output.
 -- Note that running the albums_seeder.sql multiple times will generate duplicate data, don't
 -- worry about that for now (we'll fix it by the end of the exercise).
+
+
+-- Open up albums_seeder.sql, after your USE statement, add a TRUNCATE query to delete all records from the table before inserting.
+-- Test your change and make sure you no longer get any duplicate records when running albums_seeder.sql.
