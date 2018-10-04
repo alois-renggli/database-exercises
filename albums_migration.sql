@@ -17,9 +17,9 @@ CREATE TABLE albums(
 -- id — auto incrementing unsigned integer primary key
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 -- artist — string for storing the recording artist name
-  artist VARCHAR(50) NOT NULL,
+  artist VARCHAR(100) NOT NULL,
 -- name — string for storing a record name
-  name VARCHAR(50) NOT NULL,
+  name VARCHAR(100) NOT NULL,
 -- release_date — integer representing year record was released
   release_date YEAR NOT NULL,
 -- sales — floating point value for number of records sold (in millions)

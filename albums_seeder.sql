@@ -57,6 +57,68 @@ VALUES ('Shania Twain',	'Come On Over',	1997,	'Country', 29.6);
 
 INSERT INTO albums (artist, name, release_date, genre, sales)
 VALUES ('Celine Dion',	'Falling into You',	1996,	'Pop', 20.2);
+
+
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('The Beatles',	'Sgt. Pepper''s Lonely Hearts Club Band',	1967,	'Rock',	18.2);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Various artists',	'Dirty Dancing',	1987,	'Pop', 17.9);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Michael Jackson',	'Dangerous',	1991,	'Rock', 17.3);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Adele',	'21',	2011,	'Pop', 25.3);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Celine Dion',	'Let''s Talk About Love',	1997,	'Pop', 19.3);
+
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('The Beatles',	'1',	2000,	'Rock',	23.4);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('ABBA',	'Gold: Greatest Hits',	1992,	'Pop', 22.7);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Madonna',	'The Immaculate Collection',	1990,	'Pop', 19.4);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('The Beatles',	'Abbey Road',	1969,	'Rock',	14.4);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Bruce Springsteen',	'Born in the U.S.A.',	1984,	'Heartland rock',	19.6);
+
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Dire Straits',	'Brothers in Arms',	1985,	'Roots rock', 17.7);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('James Horner',	'Titanic: Music from the Motion Picture',	1997,	'Soundtrack',	18.1);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Metallica',	'Metallica',	1991,	'Heavy metal', 21.2);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Nirvana',	'Nevermind',	1991,	'Grunge', 16.7);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Pink Floyd',	'The Wall',	1979,	'Progressive rock',	18.6);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Santana',	'Supernatural',	1999,	'Latin rock',	20.5);
+
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Guns N'' Roses',	'Appetite for Destruction',	1987,	'Hard rock', 21.6);
+--
+-- First write your queries as separate INSERT statements for each record and test. You should see
+-- no output.
+-- Refactor your script to use a single INSERT statement for all the records and test it again.
+-- Again, this should not generate any output.
+-- Note that running the albums_seeder.sql multiple times will generate duplicate data, don't ||
+
 --
 -- First write your queries as separate INSERT statements for each record and test. You should see
 -- no output.
