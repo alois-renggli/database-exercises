@@ -2,7 +2,8 @@ USE employees;
 
 -- Find all employees with first names 'Irena', 'Vidya', or 'Maya' — 709 rows (Hint: Use IN).
 SELECT 'Employess with first name of Irena, Vidya, or Maya:';
-SELECT * FROM employees.employees WHERE gender = 'M' AND (first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya');
+SELECT * FROM employees.employees 
+WHERE gender = 'M' AND (first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya');
 --
 -- Find all employees whose last name starts with 'E' — 7,330 rows.
 SELECT 'Employees with last name starting with E:';
