@@ -11,7 +11,8 @@ SELECT  * FROM employees.employees WHERE last_name LIKE 'E%' AND last_name LIKE 
 ORDER BY emp_no DESC;
 -- Find all employees hired in the 90s — 135,214 rows.
 SELECT 'Employees hired in 1990s';
-SELECT * FROM employees.employees WHERE (hire_date BETWEEN '1990-01-01' AND '1999-12-31') AND (birth_date LIKE '%-12-25');
+SELECT * FROM employees.employees WHERE (hire_date BETWEEN '1990-01-01' AND '1999-12-31') AND (birth_date LIKE '%-12-25')
+ORDER BY birth_date ASC, hire_date DESC ;
 -- Find all employees born on Christmas — 842 rows.
 SELECT 'Employees born on Christmas;';
 SELECT * FROM employees.employees WHERE birth_date LIKE '%-12-25';
