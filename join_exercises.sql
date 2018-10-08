@@ -49,7 +49,7 @@ JOIN employees.departments as de
 -- Find the current titles of employees currently working in the Customer Service department.
 
 
-SELECT et.title as 'Title', COUNT(*)
+SELECT et.title as 'Title', COUNT(e.emp_no)
 FROM employees.employees as e
 JOIN employees.dept_emp as demp
   ON demp.emp_no = e.emp_no
@@ -57,7 +57,7 @@ JOIN employees.departments as de
   ON de.dept_no = demp.dept_no
   JOIN employees.titles as et
   ON et.emp_no = e.emp_no
-  WHERE demp.to_date = '9999-01-01' AND de.dept_name = 'Customer Service'
+  WHERE et.to_date = '9999-01-01' AND de.dept_name = 'Customer Service'
   GROUP BY et.title;
 
 -- Title              | Count
