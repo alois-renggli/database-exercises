@@ -17,15 +17,14 @@ GROUP BY hire_date;
 --
 -- Find all the titles held by all employees with the first name Aamod.
 
-SELECT title
-FROM employees.employees as e
-JOIN employees.titles as et
-ON et.emp_no = e.emp_no
-WHERE title IN(
-	SELECT title
-    FROM employees.titles
+SELECT title, COUNT(*)
+FROM employees.titles as et
+WHERE emp_no IN(
+	SELECT emp_no
+    FROM employees.employees
 	WHERE first_name = 'Aamod'
-    );
+    )
+     GROUP BY title;
     --
 -- 314 total titles, 6 unique titles
 --
@@ -34,11 +33,9 @@ WHERE title IN(
 --
 SELECT first_name, last_name
 FROM employees.employees as e
-JOIN employees.dept_manager as dm
-ON dm.emp_no = e.emp_no
-WHERE gender IN(
-	SELECT gender
-    FROM employees.employees
+WHERE emp_no IN(
+	SELECT emp_no
+    FROM employees.dept_manager as dm
     WHERE gender = 'F' AND dm.to_date = '9999-01-01'
     );
 -- +------------+------------+
