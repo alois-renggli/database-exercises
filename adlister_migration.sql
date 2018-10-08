@@ -1,0 +1,35 @@
+USE adlister;
+
+CREATE TABLE user(
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  email VARCHAR(100) NOT NULL,
+  password VARCHAR(100) NOT NULL,
+  phone INT(10) NOT NULL,
+  PRIMARY KEY (id)
+);
+-- --
+-- --
+CREATE TABLE categories(
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
+  PRIMARY KEY (id)
+);
+--
+CREATE TABLE ads(
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  user_id INT UNSIGNED DEFAULT NULL,
+  title VARCHAR(100) NOT NULL,
+  description VARCHAR(100) NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (user_id)
+  REFERENCES user (id)
+);
+
+CREATE TABLE ads_categories(
+  ads_id INT UNSIGNED DEFAULT NULL,
+  categories_id INT UNSIGNED DEFAULT NULL,
+  FOREIGN KEY (ads_id)
+    REFERENCES ads(id),
+  FOREIGN KEY (categories_id)
+    REFERENCES categories(id)
+);
