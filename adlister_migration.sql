@@ -1,10 +1,15 @@
 USE adlister;
+TRUNCATE user;
+TRUNCATE ads;
+TRUNCATE categories;
+TRUNCATE ads_categories;
 
 CREATE TABLE user(
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
   email VARCHAR(100) NOT NULL,
   password VARCHAR(100) NOT NULL,
-  phone INT(10) NOT NULL,
+  phone BIGINT(10) NOT NULL,
   PRIMARY KEY (id)
 );
 -- --
@@ -20,6 +25,7 @@ CREATE TABLE ads(
   user_id INT UNSIGNED DEFAULT NULL,
   title VARCHAR(100) NOT NULL,
   description VARCHAR(100) NOT NULL,
+  price INT UNSIGNED NOT NULL,
   PRIMARY KEY (id),
   FOREIGN KEY (user_id)
   REFERENCES user (id)
