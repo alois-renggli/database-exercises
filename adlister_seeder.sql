@@ -1,12 +1,5 @@
 use adlister;
 
-TRUNCATE user;
-TRUNCATE ads;
-TRUNCATE categories;
-TRUNCATE ads_categories;
-
-
-
 INSERT INTO user (name, email, password, phone) VALUES
 ('bob', 'bob@example.com', 12333, 2783338846),
 ('joe', 'joe@example.com', 22223, 9933376455),
